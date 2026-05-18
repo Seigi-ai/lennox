@@ -1,13 +1,14 @@
-memory/*.json
-!memory/*.template.json
-logs/*.json
-!logs/*.template.json
-*.gguf
+# Lennox runtime data (user-specific)
+memory/
+logs/
+venv/
+
+# Python
 __pycache__/
 *.pyc
 *.pyo
-.env
 *.egg-info/
-dist/
-build/
+
+# OS
 .DS_Store
+Thumbs.db
