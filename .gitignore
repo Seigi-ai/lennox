@@ -1,0 +1,13 @@
+memory/*.json
+!memory/*.template.json
+logs/*.json
+!logs/*.template.json
+*.gguf
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.egg-info/
+dist/
+build/
+.DS_Store

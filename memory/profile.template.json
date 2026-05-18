@@ -1,0 +1,27 @@
+{
+  "_note": "This file is in JSON format. Ask Lennox to convert it to plain English if you don't understand it.",
+  "user": {
+    "username": "",
+    "home_dir": "",
+    "shell": "",
+    "language": "en"
+  },
+  "system": {
+    "os": "",
+    "os_version": "",
+    "cpu": "",
+    "ram_gb": 0,
+    "disk_gb": 0,
+    "gpu": "",
+    "display": ""
+  },
+  "preferences": {
+    "inferred": [],
+    "explicit": []
+  },
+  "hardware_limits": {
+    "can_run_wine64": null,
+    "recommended_model_size_gb": null
+  },
+  "last_updated": ""
+}

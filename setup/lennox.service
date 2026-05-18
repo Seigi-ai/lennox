@@ -1,0 +1,16 @@
+[Unit]
+Description=Lennox Personal Linux Assistant
+After=graphical-session.target
+Wants=graphical-session.target
+
+[Service]
+Type=simple
+Environment=DISPLAY=:0
+Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/%U/bus
+ExecStart=/usr/bin/tmux new-session -d -s lennox -x 220 -y 50 "%h/lennox/venv/bin/python %h/lennox/lennox.py"
+ExecStop=/usr/bin/tmux kill-session -t lennox
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Lennox
+Comment=Your personal Linux assistant
+Icon=%h/lennox/setup/icon.png
+Exec=bash -c 'if tmux has-session -t lennox 2>/dev/null; then gnome-terminal --title="Lennox" -- tmux attach-session -t lennox; else gnome-terminal --title="Lennox" -- %h/lennox/venv/bin/python %h/lennox/lennox.py; fi'
+Terminal=false
+Categories=Utility;System;
+Keywords=assistant;linux;ai;lennox;
+StartupNotify=true
